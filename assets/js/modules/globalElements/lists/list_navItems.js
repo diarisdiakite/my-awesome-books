@@ -1,14 +1,14 @@
-export let navItems = [
+export default [
   {
     id: 'display-list',
-    name: 'List '
+    name: 'List ',
   },
   {
     id: 'display-add',
-    name: 'Add new '
+    name: 'Add new ',
   },
   {
     id: 'display-contact',
-    name: 'Contact '
-  }
-]
+    name: 'Contact ',
+  },
+];

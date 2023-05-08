@@ -1,9 +1,14 @@
-const { DateTime } = require("luxon");
-var dt = DateTime.now();
-var f = {month: 'long', day: 'numeric'};
-let myDt = dt.setLocale('en-US').toLocaleString(f);  //=> 'September 14'
-//date.innerHTML = `<small>${Date()}</small>`;
-date.innerHTML = `<small>${myDt}</small>`;
+import { DateTime } from './luxon.js';
 
+const updateDateTime = () => {
+  const dt = DateTime.now();
+  return dt.toLocaleString(DateTime.DATETIME_FULL);
+};
 
-//See date time duration for object creating (${duration} ago)
+const updateDate = () => {
+  setInterval(() => {
+    document.getElementById('currentDateTime').textContent = updateDateTime();
+  }, 1000);
+};
+
+export default updateDate;

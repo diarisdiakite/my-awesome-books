@@ -1,10 +1,10 @@
-import { BookCollection, myBookList, books } from "../classes/bookCollectionClass.js";
-import { displaylist } from "./displayBooks.js";
+import { myBookList } from '../classes/bookCollectionClass.js';
+import { displaylist } from './displayBooks.js';
 
 const formTitle = document.getElementById('title');
 const formAuthor = document.getElementById('author');
 
-export let addEventfunction = (e) => {
+const addEventFunction = (e) => {
   e.preventDefault();
   myBookList.addBook(formTitle.value, formAuthor.value);
   formTitle.value = '';
@@ -12,3 +12,4 @@ export let addEventfunction = (e) => {
   displaylist();
 };
 
+export default addEventFunction;

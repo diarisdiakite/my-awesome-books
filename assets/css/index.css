@@ -1,5 +1,5 @@
 :root {
-	--my-main-black: rgb(0, 0, 0);
+  --my-main-black: rgb(0, 0, 0);
 }
 
 * {
@@ -152,14 +152,14 @@ button:hover {
 
 .nav-item {
   margin: 1%;
-	padding: 0 0.1%;	
+  padding: 0 0.1%;
 }
 
 .nav-link {
-	text-decoration: none;
-	color: var(--my-main-black);
-	border-right: 2px solid var(--my-main-black);
-	text-align: center;
+  text-decoration: none;
+  color: var(--my-main-black);
+  border-right: 2px solid var(--my-main-black);
+  text-align: center;
 }
 
 .contact-info {
@@ -181,7 +181,7 @@ button:hover {
 
 .footer-section {
   border: 1.5px solid black;
-  border-radius: 0.5rem;
+  border-radius: 0.1%;
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 4px;
   width: 95%;
   bottom: 0;
@@ -234,10 +234,12 @@ button:hover {
   display: none;
 }
 
-#dateC {
-  align-self: flex-end;
-  margin: 0 2.5rem;
-  padding: 0.5rem;
+/* Date section */
+
+#currentDateTime {
+  width: 30%;
+  margin-left: 100%;
+  font-size: small;
 }
 
 /* ADD STYLING TO NAVBAR */
