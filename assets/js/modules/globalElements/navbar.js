@@ -8,31 +8,37 @@ export const myNavBar = navItems.forEach((navItem) => {
 `;
 });
 
+export const navList = document.getElementById('display-list');
+export const navAdd = document.getElementById('display-add');
+export const navContact = document.getElementById('display-contact');
 const addSection = document.querySelector('.div');
 const contactSection = document.querySelector('.contact-section');
 const listSection = document.querySelector('.book-container');
 // const date = document.querySelector('#date');
 
 export const navListEventFunction = () => {
-// navList.addEventListener('click', () => {
+  navList.style.color = '#0000ff';
+  navAdd.style.color = '#000';
+  navContact.style.color = '#000';
+  listSection.style.display = 'block';
   addSection.style.display = 'none';
-  contactSection.classList.add('hide');
-  listSection.classList.remove('hide');
-// });
+  contactSection.style.display = 'none';
 };
 
 export const navAddEventFunction = () => {
-// addNav.addEventListener('click', () => {
-  listSection.classList.add('hide');
-  contactSection.classList.add('hide');
+  navAdd.style.color = '#0000ff';
+  navList.style.color = '#000';
+  navContact.style.color = '#000'; 
+  listSection.style.display = 'none';
   addSection.style.display = 'flex';
-// });
+  contactSection.style.display = 'none';
 };
 
 export const navContactEventFunction = () => {
-// contactNav.addEventListener('click', () => {
-  listSection.classList.add('hide');
-  contactSection.classList.remove('hide');
+  navContact.style.color = '#0000ff';
+  navAdd.style.color = '#000';
+  navList.style.color = '#000';
+  listSection.style.display = 'none';
   addSection.style.display = 'none';
-// });
+  contactSection.style.display = 'flex';
 };
