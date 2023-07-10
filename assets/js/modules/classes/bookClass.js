@@ -1,11 +1,11 @@
 export default class Book {
-  constructor(title, author, isbn) {
+  constructor(title, author, id) {
     this.title = title;
     this.author = author;
-    this.isbn = isbn;
+    this.id = id;
   }
 
   displayTitleByAuthor() {
-    return `${this.title} by ${this.author}`;
+    return `${this.id}, ${this.title} by ${this.author}`;
   }
 }
