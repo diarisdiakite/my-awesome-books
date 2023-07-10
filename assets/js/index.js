@@ -32,6 +32,7 @@ navList.addEventListener('click', navListEventFunction);
 navAdd.addEventListener('click', navAddEventFunction);
 navContact.addEventListener('click', navContactEventFunction);
 
+
 const currentDateTime = document.getElementById('luxon-date');
 updateDate(currentDateTime);
 

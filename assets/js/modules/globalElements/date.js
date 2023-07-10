@@ -1,8 +1,6 @@
-import { DateTime } from './luxon.js';
-
 const updateDateTime = () => {
-  const dt = DateTime.now();
-  return dt.toLocaleString(DateTime.DATETIME_FULL);
+  const dt = luxon.DateTime.now();
+  return dt.toLocaleString(luxon.DateTime.DATETIME_FULL);
 };
 
 const updateDate = () => {
