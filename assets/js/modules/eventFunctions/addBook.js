@@ -4,7 +4,6 @@ import { displaylist } from './displayBooks.js';
 const formTitle = document.getElementById('title');
 const formAuthor = document.getElementById('author');
 
-
 const addBook = (title, author) => {
   const book = {
     id: myBookList.books.length + 1,

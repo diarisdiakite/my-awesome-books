@@ -1,3 +1,5 @@
+/* global luxon */
+
 const updateDateTime = () => {
   const dt = luxon.DateTime.now();
   return dt.toLocaleString(luxon.DateTime.DATETIME_FULL);

@@ -19,7 +19,7 @@ export default class BookCollection {
   loadBooksFromStorage() {
     const savedBooks = localStorage.getItem(this.name);
     if (savedBooks) {
-      this.books = JSON.parse(savedBooks).map((book) => new Book(book.title, book.author, book.id)); //Check this afterwards
+      this.books = JSON.parse(savedBooks).map((book) => new Book(book.title, book.author, book.id));
     }
     return this.books;
   }

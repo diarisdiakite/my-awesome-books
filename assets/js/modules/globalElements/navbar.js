@@ -28,7 +28,7 @@ export const navListEventFunction = () => {
 export const navAddEventFunction = () => {
   navAdd.style.color = '#0000ff';
   navList.style.color = '#000';
-  navContact.style.color = '#000'; 
+  navContact.style.color = '#000';
   listSection.style.display = 'none';
   addSection.style.display = 'flex';
   contactSection.style.display = 'none';
