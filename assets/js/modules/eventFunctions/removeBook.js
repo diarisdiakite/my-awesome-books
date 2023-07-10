@@ -1,13 +1,10 @@
-import { myBookList } from '../classes/bookCollectionClass.js';
+import { books, myBookList } from '../classes/bookCollectionClass.js';
 
-const displayAllBooks = document.querySelector('#list');
-
-const attachRemoveButtonListener = (removeButton, bookId) => {
-  removeButton.addEventListener('click', () => {
-    myBookList.removeBook(bookId);
-    const bookEl = document.getElementById(`data-${bookId}`);
-    displayAllBooks.removeChild(bookEl);
-  });
+const removeBook = (id) => {
+  const updatedBooks = books.filter((book) => book.id !== parseInt(id));
+  myBookList.books = updatedBooks;
+  myBookList.saveBooksToStorage('BookData', JSON.stringify(updatedBooks)); 
+  window.location.reload();
 };
 
-export default attachRemoveButtonListener;
+export default removeBook;

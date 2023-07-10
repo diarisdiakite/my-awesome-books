@@ -1,10 +1,13 @@
-import { myBookList, books } from '../classes/bookCollectionClass.js';
-// import { removeButtonEventFunction } from "./removeBook.js";
+//import Book from '../classes/bookClass.js';
+import { books } from '../classes/bookCollectionClass.js';
+import removeBook from './removeBook.js';
+
 
 const displayAllBooks = document.querySelector('#list');
 
 export const displaylist = () => {
   books.forEach((book) => {
+    console.log('Books:', books);
     const bookCard = document.createElement('li');
     const removeButton = document.createElement('button');
     removeButton.classList.add('my-button-container');
@@ -18,16 +21,17 @@ export const displaylist = () => {
 
     removeButton.addEventListener('click', (e) => {
       const { id } = e.target.dataset;
-      myBookList.removeBook(id);
+      removeBook(id);
       const bookEl = document.getElementById(`data-${book.id}`);
-      displayAllBooks.removeChild(bookEl);
-      // window.location.reload();
+      //const bookEl = document.getElementById(`book-${id}`);
+      displayAllBooks.removeChild(bookEl); 
     });
-
     bookCard.appendChild(removeButton);
     displayAllBooks.appendChild(bookCard);
     bookCard.classList.add('book-stack');
   });
+  
 };
-/* */
+displaylist();
+
 export const removeButtons = document.querySelectorAll('.my-button-container');
