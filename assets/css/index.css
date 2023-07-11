@@ -145,14 +145,14 @@ button:hover {
   display: flex;
   list-style-type: none;
   margin: 0 1%;
-  padding: 1%;
+  padding: 1% 0 1% 0;
   justify-content: flex-end;
   background-color: whitesmoke;
 }
 
 .nav-item {
   margin: 1%;
-  padding: 0 0.1%;
+  padding: 0 5%;
 }
 
 .nav-link {
@@ -181,6 +181,7 @@ button:hover {
 
 .footer-section {
   border: 1.5px solid black;
+  background-color: whitesmoke;
   border-radius: 0.1%;
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 4px;
   width: 95%;
@@ -227,7 +228,6 @@ button:hover {
 .contact-details li {
   padding-bottom: 1rem;
   margin-left: 1rem;
-  right: 2rem;
 }
 
 .hide {
@@ -238,7 +238,7 @@ button:hover {
 
 #currentDateTime {
   width: 30%;
-  margin-left: 100%;
+  margin-left: 95%;
   font-size: small;
 }
 
